@@ -4,5 +4,5 @@ import com.example.weather_app.model.local.LocalWeatherForecast
 
 interface WeatherForecastRepository {
 
-    fun getWeatherForecast(cityName: String) : LocalWeatherForecast
+    suspend fun getWeatherForecast(cityName: String) : LocalWeatherForecast
 }
