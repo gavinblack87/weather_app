@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.weather_app.R
-import com.example.weather_app.model.repository.WeatherForecastRepository
 import com.example.weather_app.viewmodel.Status
 import com.example.weather_app.viewmodel.WeatherForecastViewModel
 import com.example.weather_app.viewmodel.WeatherForecastViewModelFactory
