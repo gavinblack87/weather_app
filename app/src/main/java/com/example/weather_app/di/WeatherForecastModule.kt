@@ -5,6 +5,7 @@ import com.example.weather_app.model.mapper.OpenWeatherForecastRepsonseMapper
 import com.example.weather_app.model.mapper.WeatherForecastResponseMapper
 import com.example.weather_app.model.repository.OpenWeatherForecastRepository
 import com.example.weather_app.model.repository.WeatherForecastRepository
+import com.example.weather_app.viewmodel.WeatherForecastViewModelFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,6 +21,10 @@ object WeatherForecastModule {
 
     @Provides
     fun provideWeatherForecastResponseMapper() : WeatherForecastResponseMapper = OpenWeatherForecastRepsonseMapper()
+
+    @Provides
+    fun provideWeatherForecastViewModelFactory(weatherForecastRepository: WeatherForecastRepository) : WeatherForecastViewModelFactory
+    = WeatherForecastViewModelFactory(weatherForecastRepository)
 
     @Provides
     fun provideWeatherForecastRepository(weatherForecastAPI: WeatherForecastAPI, mapper: WeatherForecastResponseMapper)
