@@ -5,5 +5,6 @@
     <string name="minTemp">Min %1$s \u00B0C </string>
     <string name="maxTemp">Max %1$s \u00B0C</string>
     <string name="feelsLike">Feels like %1$s \u00B0C</string>
+    <string name="GavWeather">Gavs Weather</string>
 
 </resources>
